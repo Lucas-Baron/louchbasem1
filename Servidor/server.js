@@ -1,9 +1,24 @@
 const express = require('express')
+const nunjuncks = require('nunjucks')
+
 const server = express()
 
-server.get('/', function(req, res){
-    return res.send("Hi how's going?")
+server.use(express.static('public'))
+
+server.set('view engine', 'html')
+
+nunjuncks.configure('views', {
+    express:server
 })
+
+server.get('/', function(req, res){
+    return res.render('index')
+})
+
+server.get('/portifolio', function(req, res){
+    return res.render('portifolio')
+})
+
 
 server.listen(5000, function(){
     console.log('server is running')
