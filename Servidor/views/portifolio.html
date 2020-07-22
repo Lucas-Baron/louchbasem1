@@ -1,134 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Baron</title>
+{% extends 'layout.html' %}
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="/">Sobre</a>
-            <a href="/portifolio">Portifólio</a>
-        </div>
-    </header>
+{% block head %}
+<title>Portifólio - Lucas Baron</title>
 
-    <div id="wrapper">
-        <h1>Projetos</h1>
-    </div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
 
-    <section class="cards">
+{% block content %}
 
-        <div class="card" id="GykTLqODQuU">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Formulário Animado com JS puro e CSS Animation | Mayk Brito</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>57:56</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
+<div id="wrapper">
+    <h1>Projetos</h1>
+</div>
+
+<section class="cards">
+
+    <div class="card" id="GykTLqODQuU">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="imagem">
         </div>
 
-        <div class="card" id="Vw9BG9fauIE">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/Vw9BG9fauIE/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Deno, o que vai acontecer? | Code/Drops #31</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>15:47</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
+        <div class="card__contant">
+            <h3>Formulário Animado com JS puro e CSS Animation | Mayk Brito</h3>
         </div>
 
-        <div class="card" id="ZaDpDlPr25M">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/ZaDpDlPr25M/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Expo SDK 38.0 mudou o jogo no React Native | Code/Drops #40</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>39:05</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
-        </div>
-
-        <div class="card" id="SGwHpzgqzgk">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/SGwHpzgqzgk/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Criando um Carousel do Zero só com CSS | Code/Drops #39</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>25:18</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
-        </div>
-
-        <div class="card" id="wCfSdBdr0hc">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/wCfSdBdr0hc/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Bruno Bortagaray Senior Frontend Engineer at JustWatch | Alumni #05</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>56:17</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
-        </div>
-
-        <div class="card" id="EhnXaybirdA">
-            <div class="card__img-container">
-                <img src="http://i3.ytimg.com/vi/EhnXaybirdA/maxresdefault.jpg" alt="imagem">
-            </div>
-    
-            <div class="card__contant">
-                <h3>Criando um projeto do zero para seu portfólio | Masterclass #14</h3>
-            </div>
-    
-            <div class="card__info">
-                <h3>44:39</h3>
-                <h3 class="card__price">Free</h3>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="modal-overlay">
-        <div class="modal">
-            <a class="close-modal">
-                <i class="material-icons">close</i>
-            </a>
-
-            <div class="modal-contant">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
+        <div class="card__info">
+            <h3>57:56</h3>
+            <h3 class="card__price">Free</h3>
         </div>
     </div>
 
+    <div class="card" id="Vw9BG9fauIE">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/Vw9BG9fauIE/maxresdefault.jpg" alt="imagem">
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card__contant">
+            <h3>Deno, o que vai acontecer? | Code/Drops #31</h3>
+        </div>
 
-</body>
-</html>
+        <div class="card__info">
+            <h3>15:47</h3>
+            <h3 class="card__price">Free</h3>
+        </div>
+    </div>
+
+    <div class="card" id="ZaDpDlPr25M">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/ZaDpDlPr25M/maxresdefault.jpg" alt="imagem">
+        </div>
+
+        <div class="card__contant">
+            <h3>Expo SDK 38.0 mudou o jogo no React Native | Code/Drops #40</h3>
+        </div>
+
+        <div class="card__info">
+            <h3>39:05</h3>
+            <h3 class="card__price">Free</h3>
+        </div>
+    </div>
+
+    <div class="card" id="SGwHpzgqzgk">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/SGwHpzgqzgk/maxresdefault.jpg" alt="imagem">
+        </div>
+
+        <div class="card__contant">
+            <h3>Criando um Carousel do Zero só com CSS | Code/Drops #39</h3>
+        </div>
+
+        <div class="card__info">
+            <h3>25:18</h3>
+            <h3 class="card__price">Free</h3>
+        </div>
+    </div>
+
+    <div class="card" id="wCfSdBdr0hc">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/wCfSdBdr0hc/maxresdefault.jpg" alt="imagem">
+        </div>
+
+        <div class="card__contant">
+            <h3>Bruno Bortagaray Senior Frontend Engineer at JustWatch | Alumni #05</h3>
+        </div>
+
+        <div class="card__info">
+            <h3>56:17</h3>
+            <h3 class="card__price">Free</h3>
+        </div>
+    </div>
+
+    <div class="card" id="EhnXaybirdA">
+        <div class="card__img-container">
+            <img src="http://i3.ytimg.com/vi/EhnXaybirdA/maxresdefault.jpg" alt="imagem">
+        </div>
+
+        <div class="card__contant">
+            <h3>Criando um projeto do zero para seu portfólio | Masterclass #14</h3>
+        </div>
+
+        <div class="card__info">
+            <h3>44:39</h3>
+            <h3 class="card__price">Free</h3>
+        </div>
+    </div>
+
+</section>
+
+<div class="modal-overlay">
+    <div class="modal">
+        <a class="close-modal">
+            <i class="material-icons">close</i>
+        </a>
+
+        <div class="modal-contant">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+{% endblock %}
