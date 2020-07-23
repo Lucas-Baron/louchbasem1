@@ -3,7 +3,8 @@ module.exports = [
         id:"GykTLqODQuU",
         title:"Formulário Animado com JS puro e CSS Animation | Mayk Brito",
         duration:"57:56",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id:"Vw9BG9fauIE",
@@ -21,7 +22,8 @@ module.exports = [
         id:"SGwHpzgqzgk",
         title:"Criando um Carousel do Zero só com CSS | Code/Drops #39",
         duration:"25:18",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id:"wCfSdBdr0hc",
@@ -33,6 +35,7 @@ module.exports = [
         id:"EhnXaybirdA",
         title:"Criando um projeto do zero para seu portfólio | Masterclass #14",
         duration:"44:39",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 ]

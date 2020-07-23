@@ -98,6 +98,7 @@ footer a{
     background-color: var(--color-roxo);
     color: white;
     cursor: pointer;
+    display: grid;
 }
 
 .card__img-container img{
@@ -107,6 +108,7 @@ footer a{
 .card__contant,
 .card__info{
     padding: 24px;
+    align-items: center;
 }
 
 .card__info{
@@ -167,4 +169,18 @@ iframe{
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+/*== IFRAME ==*/
+.featured-wrapper.card__img-container{
+    position: relative;
+}
+.featured{
+    background-color: #f7d05f;
+    color: #111;
+    padding:  8px;
+    right: 5px;
+    position: absolute;
+    border-radius: 16px;
+    top: -10px;
 }
