@@ -6,7 +6,7 @@ const server = express()
 
 server.use(express.static('public'))
 
-server.set('view engine', 'html')
+server.set('view engine', 'njk')
 
 nunjuncks.configure('views', {
     express:server
@@ -17,7 +17,7 @@ server.get('/', function(req, res){
 })
 
 server.get('/portifolio', function(req, res){
-    return res.render('portifolio')
+    return res.render('portifolio', {itens: videos})
 })
 
 
