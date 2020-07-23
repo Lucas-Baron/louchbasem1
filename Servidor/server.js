@@ -9,11 +9,24 @@ server.use(express.static('public'))
 server.set('view engine', 'njk')
 
 nunjuncks.configure('views', {
-    express:server
+    express:server,
+    autoescape: false
 })
 
 server.get('/', function(req, res){
-    return res.render('about')
+    const about = {
+        avatar:'image/lucas.jpg',
+        name:'Lucas Baron',
+        role: 'Aluno - <a href="https://rocketseat.com.br/" target="_blanck">Rocketseat</a>',
+        description:'Desenvolvedor Web </br>HTML | CSS | Javascript | Node Js',
+        links: [
+            {name: 'Github', url: "https://github.com/Lucas-Baron"},
+            {name: 'Linkedin', url: "https://www.linkedin.com/in/lucas-baron-/"},
+            {name: 'Instagram', url: "/"}
+        ]
+    }
+
+    return res.render('about', { about})
 })
 
 server.get('/portifolio', function(req, res){

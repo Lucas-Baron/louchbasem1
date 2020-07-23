@@ -1,7 +1,7 @@
 {% extends 'layout.njk' %}
 
 {% block head %}
-<title>Sobre - Lucas Baron</title>
+<title>Sobre - {{about.name}}</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
@@ -9,17 +9,17 @@
 {% block content %}
 
 <div id="wrapper">
-    <img src="image/lucas.jpg" alt="Lucas">
-    <h1>Lucas Baron</h1>
-    <h2>Aluno - <a href="https://rocketseat.com.br/" target="_blanck">Rocketseat</a></h2>
-    <p>Desenvolvedor Web </br>HTML | CSS | Javascript | Node Js</p>
+    <img src="{{about.avatar}}" alt="Imagem de {{about.name}}">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.role}}</h2>
+    <p>{{about.description}}</p>
 </div>
 
 <footer>
     <div class="links">
-        <a href="https://github.com/Lucas-Baron" target="_blanck">Github</a>
-        <a href="https://www.linkedin.com/in/lucas-baron-/" target="_blanck">Linkedin</a>
-        <a href="/">Instagram</a>
+        {% for link in about.links %}
+            <a href="{{link.url}}" target="_blanck">{{link.name}}</a>
+        {% endfor %}
     </div>
 </footer>    
     
